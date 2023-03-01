@@ -118,6 +118,7 @@
   display: none;
   flex-direction: column;
   gap: 10px 0;
+  cursor: pointer;
 }
 .header .container .actions .burger .line {
   display: block;

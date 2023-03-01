@@ -25,7 +25,7 @@ export const destination = [
   },
   {
     id: 2,
-    title: "paris",
+    title: "Paris",
     image:
       "https://dreamsinparis.com/wp-content/uploads/2022/01/Eiffel-tower-sparkling-at-night.jpg",
     paragraph:

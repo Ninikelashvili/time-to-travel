@@ -75,6 +75,15 @@
                     flex-direction: column
                     gap: 15px 0
                     cursor: pointer
+                    &:hover
+                        .title-medium
+                            opacity: 1
+                        .paragraph-small
+                            opacity: 1
+                        .image-wrapper
+                            img
+                                transform: scale(1.2)
+                                cursor: pointer
                     .image-wrapper
                         width: 100%
                         height: 300px
@@ -88,11 +97,10 @@
                             height: 100%
                             object-fit: cover
                             transition: all 0.5s ease
-                            &:hover
-                                transform: scale(1.2)
-                                cursor: pointer
                     .paragraph-small
                         -webkit-line-clamp: 2
+                        opacity: 0.4
+                        transition: all .5s ease
                     .destination-row
                         display: flex
                         align-items: center
@@ -114,6 +122,10 @@
                         .add-info
                             font-family: sans-serif
                             font-size: 12px
+                    .title-medium
+                        font-weight: 400
+                        opacity: 0.4
+                        transition: all .5s ease
     // end destination styles  
 
     // blog styles 
@@ -302,6 +314,10 @@
             .container
                 .list-wrapper
                     grid-template-columns: repeat(1, 1fr)
+                    .destination
+                        .title-medium,
+                        .paragraph-small
+                            opacity: 1
 
     .page-main
         .blog-wrapper
