@@ -5,7 +5,7 @@ const customersWrapper = document.querySelector(".customers-list-wrapper");
 let content = "";
 for (let item of destination) {
   content += `
-    <div class="destination">
+    <div class="destination"  data-aos="fade-up" data-aos-delay=${item.delay} data-aos-offset="0"  data-aos-duration="1000">
         <div class="image-wrapper">
             <img src=${item.image} alt="singapore" />
         </div>
@@ -72,3 +72,5 @@ const active = () => {
 };
 
 active();
+
+AOS.init();

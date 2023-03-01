@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Website</title>
+    <link rel="stylesheet" href="./assets/css/libs/aos.css" />
     <link rel="stylesheet" href="./assets/css/app.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/animation.css" />
@@ -44,10 +45,13 @@
     </header>
 
     <div class="container top-container">
-      <div class="banner">
+      <div class="banner" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="300" data-aos-offset="0">
         <div class="intro-wrapper">
-          <h1 class="title title-extra-large">Travel To explore</h1>
-          <p class="paragraph paragraph-small">
+          <h1 class="title title-extra-large" data-aos="fade-down" data-aos-duration="2000">
+            Travel To explore
+          </h1>
+          <p
+            class="paragraph paragraph-small" data-aos="fade-down" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="900">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ultricies mi eget mauris
@@ -55,7 +59,7 @@
         </div>
       </div>
       <div class="benefits-wrapper">
-        <div class="benefit">
+        <div class="benefit" data-aos="fade-zoom-in" data-aos-delay="500" data-aos-offset="0" data-aos-duration="1000">
           <div class="benefit-image">
             <img src="./assets/media/prices.svg" alt="prices" />
           </div>
@@ -65,7 +69,7 @@
             rewards
           </p>
         </div>
-        <div class="benefit">
+        <div class="benefit" data-aos="fade-zoom-in" data-aos-delay="700" data-aos-offset="0" data-aos-duration="1000">
           <div class="benefit-image">
             <img src="./assets/media/safe.svg" alt="safe" />
           </div>
@@ -75,7 +79,7 @@
             corvid safe environment
           </p>
         </div>
-        <div class="benefit">
+        <div class="benefit" data-aos="fade-zoom-in" data-aos-delay="900" data-aos-offset="0" data-aos-duration="1000">
           <div class="benefit-image">
             <img src="./assets/media/payment.svg" alt="safe" />
           </div>
@@ -85,7 +89,8 @@
             payment
           </p>
         </div>
-        <div class="benefit">
+        <div class="benefit" data-aos="fade-zoom-in" data-aos-delay="1100" data-aos-offset="0" data-aos-duration="1000"
+        >
           <div class="benefit-image">
             <img src="./assets/media/near.svg" alt="safe" />
           </div>
@@ -175,5 +180,6 @@
     </div>
   </body>
 
+  <script src="./assets/js/libs/aos.js"></script>
   <script type="module" src="./assets/js/app.js"></script>
 </html>

@@ -9,10 +9,11 @@ export const destination = [
     price: "38,800",
     travel_time: "Approx 2 night trip",
     distance: "1000 Kms",
+    delay: 100,
   },
   {
     id: 1,
-    title: "thailand",
+    title: "Thailand",
     image:
       "https://d240vg222euz94.cloudfront.net/media/uploads/images/a5981c45-4f4d-44b8-a581-d9b10985fcb7.jpeg",
     paragraph:
@@ -20,6 +21,7 @@ export const destination = [
     price: "38,800",
     travel_time: "Approx 2 night trip",
     distance: "1000 Kms",
+    delay: 300,
   },
   {
     id: 2,
@@ -31,10 +33,11 @@ export const destination = [
     price: "38,800",
     travel_time: "Approx 2 night trip",
     distance: "1000 Kms",
+    delay: 500,
   },
   {
     id: 3,
-    title: "new zealand",
+    title: "New Zealand",
     image:
       "https://cdn.britannica.com/68/179868-138-F4FC616A/Overview-discussion-Southern-Alps-warming-New-Zealand.jpg?w=800&h=450&c=crop",
     paragraph:
@@ -42,6 +45,7 @@ export const destination = [
     price: "38,800",
     travel_time: "Approx 1 night trip",
     distance: "1000 Kms",
+    delay: 100,
   },
   {
     id: 4,
@@ -53,6 +57,7 @@ export const destination = [
     price: "38,800",
     travel_time: "Approx 2 night 2 day trip",
     distance: "1000 Kms",
+    delay: 300,
   },
   {
     id: 5,
@@ -64,6 +69,7 @@ export const destination = [
     price: "38,800",
     travel_time: "Approx 3 night 2 day trip",
     distance: "1000 Kms",
+    delay: 500,
   },
 ];
 
