@@ -1,5 +1,5 @@
 .page-main .banner {
-  background-image: url(/assets/media/banner.jpg);
+  background-image: url("/assets/media/banner.jpg");
   height: 80vh;
   width: 100%;
   background-size: cover;
@@ -196,7 +196,7 @@
   cursor: pointer;
 }
 .page-main .blog-wrapper .blogs .main-blog {
-  background-image: url(/assets/media/blog-1.jpg);
+  background-image: url("/assets/media/blog-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 18px;
@@ -219,10 +219,10 @@
   height: 277px;
 }
 .page-main .blog-wrapper .blogs .blogs-col .sec-blog {
-  background-image: url(/assets/media/blog-2.jpg);
+  background-image: url("/assets/media/blog-2.jpg");
 }
 .page-main .blog-wrapper .blogs .blogs-col .third-blog {
-  background-image: url(/assets/media/blog-3.jpg);
+  background-image: url("/assets/media/blog-3.jpg");
 }
 .page-main .customers-wrapper {
   max-width: 1785px;
@@ -252,7 +252,7 @@
   cursor: pointer;
 }
 .page-main .customers-wrapper .slider .customers-list-wrapper .customer {
-  background-image: url(/assets/media/author-vec.svg);
+  background-image: url("/assets/media/author-vec.svg");
   background-repeat: no-repeat;
   background-position-y: 60px;
   background-position-x: 20px;
