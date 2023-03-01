@@ -59,3 +59,16 @@ for (let item of customers) {
 
   customersWrapper.innerHTML = customersContent;
 }
+
+const active = () => {
+  const body = document.querySelector("body");
+  const burger = document.querySelector(".burger");
+
+  if (burger) {
+    burger.addEventListener("click", () => {
+      body.classList.toggle("menu-open");
+    });
+  }
+};
+
+active();

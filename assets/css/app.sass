@@ -22,11 +22,13 @@
     line-height: 61px
     color: #FFFFFF
     text-transform: uppercase
+    text-align: center
 
 .title-large
     font-size: 32px
     line-height: 37px
     color: #000000
+    text-align: center
 
 .title-medium
     font-size: 22px
@@ -94,6 +96,20 @@
                 transition: all 0.5s ease
                 &:hover
                     opacity: 1
+        .actions
+            display: flex
+            align-items: center
+            flex-direction: row-reverse
+            gap: 0 15px
+            .burger
+                display: none
+                flex-direction: column
+                gap: 10px 0
+                .line
+                    display: block
+                    height: 1px
+                    width: 30px
+                    background-color: #1C4961
 
 .footer
     background-color: #E1E8F8
@@ -144,3 +160,92 @@
                 object-fit: contain
             &:hover
                 box-shadow: 0 0 10px #000000a7
+
+.menu-open
+    .header
+        .container
+            ul
+                transform: translateX(0%)
+            .burger
+                z-index: 999
+                gap: 0
+                position: fixed
+                right: 15px
+                .line
+                    background-color: #fff
+                .line1
+                    transform: rotate(45deg)
+                .line2
+                    transform: rotate(-45deg)
+
+@media (max-width: 1280px)
+    .footer
+        flex-direction: column-reverse
+        gap: 30px 0
+
+@media (max-width: 992px)
+    .header
+        .container
+            ul
+                gap: 0 50px
+
+@media (max-width: 768px)
+    .header
+        .container
+            ul
+                position: fixed
+                top: 0
+                right: 0
+                height: 100vh
+                width: 60%
+                background-color: #1C4961
+                flex-direction: column
+                align-items: center
+                gap: 50px 0
+                transform: translateX(100%)
+                transition: all 0.5s ease
+                a
+                    color: #fff
+            .actions
+                flex-direction: row
+                .burger
+                    display: flex
+                    .line
+                        transition: all 0.5s ease
+
+    .title-extra-large
+        font-size: 36px
+        line-height: 44px
+
+    .title-large
+        font-size: 26px
+        line-height: 28px
+
+    .title-medium
+        font-size: 18px
+        line-height: 22px
+
+@media (max-width: 576px)
+    .header
+        .container
+            padding: 15px
+
+    .footer-container
+        padding: 0
+        .footer
+            margin: 0
+            border-radius: 0
+            .footer-nav
+                gap: 0 15px
+            .paragraph-small
+                text-align: center
+                font-size: 12px
+
+    .title-extra-large
+        font-size: 26px
+        line-height: 37px
+
+@media (max-width: 375px)
+    .title-large
+        font-size: 22px
+        line-height: 20px

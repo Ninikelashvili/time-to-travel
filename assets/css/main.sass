@@ -1,4 +1,5 @@
 .page-main
+    // top section
     .banner
         background-image: url(/assets/media/banner.jpg)
         height: 500px
@@ -15,14 +16,14 @@
             text-align: center
             color: #fff
             font-size: 22px
-
-    .intro-search-wrapper
+    .intro-wrapper
         max-width: 550px
         width: 100%
         display: flex
         flex-direction: column
         align-items: center
         gap: 20px 0
+    // end  top section
 
     // benefits styles
     .benefits-wrapper
@@ -213,37 +214,149 @@
                 &:hover
                     animation-play-state: paused
                     cursor: pointer
-            .customer
-                background-image: url(/assets/media/author-vec.svg)
-                background-repeat: no-repeat
-                background-position-y: 60px
-                background-position-x: 20px
-                min-width: 918px
-                width: 918px
-                box-shadow: 10px 40px 50px rgb(229 233 246 / 54%)
-                border-radius: 18px
-                padding: 55px 55px 55px 100px
-                display: flex
-                flex-direction: column
-                align-items: flex-start
-                gap: 40px 0
-                .paragraph-small
-                    -webkit-line-clamp: 5
-                .author
+                .customer
+                    background-image: url(/assets/media/author-vec.svg)
+                    background-repeat: no-repeat
+                    background-position-y: 60px
+                    background-position-x: 20px
+                    min-width: 918px
+                    width: 918px
+                    box-shadow: 10px 40px 50px rgb(229 233 246 / 54%)
+                    border-radius: 18px
+                    padding: 55px 55px 55px 100px
                     display: flex
-                    align-items: center
-                    gap: 0 20px
-                    .author-image
-                        height: 70px
-                        width: 70px
-                        border-radius: 50%
-                        overflow: hidden
-                        img
-                            height: 100%
-                            width: 100%
-                            object-fit: cover
-                    span
-                        font-family: sans-serif
-                        font-size: 14px
-                        color: #848484
+                    flex-direction: column
+                    align-items: flex-start
+                    gap: 40px 0
+                    .paragraph-small
+                        -webkit-line-clamp: 5
+                    .author
+                        display: flex
+                        align-items: center
+                        gap: 0 20px
+                        .author-image
+                            height: 70px
+                            width: 70px
+                            border-radius: 50%
+                            overflow: hidden
+                            img
+                                height: 100%
+                                width: 100%
+                                object-fit: cover
+                        span
+                            font-family: sans-serif
+                            font-size: 14px
+                            color: #848484
     // end customers styles 
+
+@media (max-width: 1080px)
+    .page-main
+        .benefits-wrapper
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            gap: 15px
+            .benefit
+                max-width: 100%
+                box-shadow: 0 0 10px rgb(229 233 246 / 54%)
+        .destination-wrapper
+            .container
+                gap: 50px 0
+                .list-wrapper
+                    grid-template-columns: repeat(2, 1fr)
+                    gap: 100px 15px
+        .blog-wrapper
+            padding: 50px 15px
+            gap: 50px 0
+
+        .customers-wrapper
+            gap: 50px 0
+            .slider
+                .customers-list-wrapper
+                    animation: none
+                    overflow: scroll
+                    margin: 0
+                    padding-bottom: 60px
+                    -ms-overflow-style: none
+                    scrollbar-width: none
+                    &::-webkit-scrollbar
+                        display: none
+                    .customer
+                        min-width: 700px
+                        width: 700px
+                        padding: 25px 25px 25px 80px
+                        gap: 20px 0
+                        background-size: 40px
+                        background-position-y: 31px
+                        .author
+                            .author-image
+                                height: 50px
+                                width: 50px
+
+@media (max-width: 768px)
+    .page-main
+        .banner
+            .paragraph
+                max-width: 80%
+                font-size: 18px
+        .destination-wrapper
+            .container
+                .list-wrapper
+                    grid-template-columns: repeat(1, 1fr)
+
+    .page-main
+        .blog-wrapper
+            .blogs
+                flex-direction: column
+                gap: 15px 0
+                .main-blog
+                    height: 277px
+                .blog
+                    .title
+                        font-size: 18px
+                        line-height: 24px
+
+@media (max-width: 576px)
+    .page-main
+        .top-container
+            padding: 0
+            .banner
+                height: 300px
+                border-radius: 0
+
+        .benefits-wrapper
+            grid-template-columns: repeat(1, 1fr)
+            padding: 50px 15px
+            .benefit
+                gap: 15px 0
+                height: 230px
+                padding: 25px
+                .benefit-image
+                    width: 60px
+                    height: 60px
+
+        .destination-wrapper
+            padding: 50px 0 90px 0
+            .container
+                gap: 50px 0
+
+        .blog-wrapper
+            gap: 35px 0
+            .blogs
+                .blog
+                    .title
+                        max-width: 84%
+
+        .customers-wrapper
+            gap: 40px 0
+            .slider
+                .customers-list-wrapper
+                    padding: 0 15px 60px 15px
+                    gap: 0 15px
+                    .customer
+                        background-size: 25px
+                        background-position-x: 10px
+                        padding: 25px 25px 25px 48px
+                        min-width: 300px
+                        width: 300px
+                        .paragraph-small
+                            -webkit-line-clamp: 10

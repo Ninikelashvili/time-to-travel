@@ -16,7 +16,7 @@
   color: #fff;
   font-size: 22px;
 }
-.page-main .intro-search-wrapper {
+.page-main .intro-wrapper {
   max-width: 550px;
   width: 100%;
   display: flex;
@@ -238,7 +238,7 @@
   animation-play-state: paused;
   cursor: pointer;
 }
-.page-main .customers-wrapper .slider .customer {
+.page-main .customers-wrapper .slider .customers-list-wrapper .customer {
   background-image: url(/assets/media/author-vec.svg);
   background-repeat: no-repeat;
   background-position-y: 60px;
@@ -253,28 +253,148 @@
   align-items: flex-start;
   gap: 40px 0;
 }
-.page-main .customers-wrapper .slider .customer .paragraph-small {
+.page-main .customers-wrapper .slider .customers-list-wrapper .customer .paragraph-small {
   -webkit-line-clamp: 5;
 }
-.page-main .customers-wrapper .slider .customer .author {
+.page-main .customers-wrapper .slider .customers-list-wrapper .customer .author {
   display: flex;
   align-items: center;
   gap: 0 20px;
 }
-.page-main .customers-wrapper .slider .customer .author .author-image {
+.page-main .customers-wrapper .slider .customers-list-wrapper .customer .author .author-image {
   height: 70px;
   width: 70px;
   border-radius: 50%;
   overflow: hidden;
 }
-.page-main .customers-wrapper .slider .customer .author .author-image img {
+.page-main .customers-wrapper .slider .customers-list-wrapper .customer .author .author-image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page-main .customers-wrapper .slider .customer .author span {
+.page-main .customers-wrapper .slider .customers-list-wrapper .customer .author span {
   font-family: sans-serif;
   font-size: 14px;
   color: #848484;
+}
+
+@media (max-width: 1080px) {
+  .page-main .benefits-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .page-main .benefits-wrapper .benefit {
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(229, 233, 246, 0.54);
+  }
+  .page-main .destination-wrapper .container {
+    gap: 50px 0;
+  }
+  .page-main .destination-wrapper .container .list-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 15px;
+  }
+  .page-main .blog-wrapper {
+    padding: 50px 15px;
+    gap: 50px 0;
+  }
+  .page-main .customers-wrapper {
+    gap: 50px 0;
+  }
+  .page-main .customers-wrapper .slider .customers-list-wrapper {
+    animation: none;
+    overflow: scroll;
+    margin: 0;
+    padding-bottom: 60px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .page-main .customers-wrapper .slider .customers-list-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .page-main .customers-wrapper .slider .customers-list-wrapper .customer {
+    min-width: 700px;
+    width: 700px;
+    padding: 25px 25px 25px 80px;
+    gap: 20px 0;
+    background-size: 40px;
+    background-position-y: 31px;
+  }
+  .page-main .customers-wrapper .slider .customers-list-wrapper .customer .author .author-image {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .page-main .banner .paragraph {
+    max-width: 80%;
+    font-size: 18px;
+  }
+  .page-main .destination-wrapper .container .list-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .page-main .blog-wrapper .blogs {
+    flex-direction: column;
+    gap: 15px 0;
+  }
+  .page-main .blog-wrapper .blogs .main-blog {
+    height: 277px;
+  }
+  .page-main .blog-wrapper .blogs .blog .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .page-main .top-container {
+    padding: 0;
+  }
+  .page-main .top-container .banner {
+    height: 300px;
+    border-radius: 0;
+  }
+  .page-main .benefits-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 15px;
+  }
+  .page-main .benefits-wrapper .benefit {
+    gap: 15px 0;
+    height: 230px;
+    padding: 25px;
+  }
+  .page-main .benefits-wrapper .benefit .benefit-image {
+    width: 60px;
+    height: 60px;
+  }
+  .page-main .destination-wrapper {
+    padding: 50px 0 90px 0;
+  }
+  .page-main .destination-wrapper .container {
+    gap: 50px 0;
+  }
+  .page-main .blog-wrapper {
+    gap: 35px 0;
+  }
+  .page-main .blog-wrapper .blogs .blog .title {
+    max-width: 84%;
+  }
+  .page-main .customers-wrapper {
+    gap: 40px 0;
+  }
+  .page-main .customers-wrapper .slider .customers-list-wrapper {
+    padding: 0 15px 60px 15px;
+    gap: 0 15px;
+  }
+  .page-main .customers-wrapper .slider .customers-list-wrapper .customer {
+    background-size: 25px;
+    background-position-x: 10px;
+    padding: 25px 25px 25px 48px;
+    min-width: 300px;
+    width: 300px;
+  }
+  .page-main .customers-wrapper .slider .customers-list-wrapper .customer .paragraph-small {
+    -webkit-line-clamp: 10;
+  }
 }/*# sourceMappingURL=main.css.map */
